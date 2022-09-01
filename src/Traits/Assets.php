@@ -3,12 +3,12 @@
 namespace SleepingOwl\Admin\Traits;
 
 use Meta;
-use KodiCMS\Assets\Facades\PackageManager;
+use SleepingOwl\Admin\KDI\Facades\PackageManager;
 
 trait Assets
 {
     /**
-     * @var \KodiCMS\Assets\Package
+     * @var \SleepingOwl\Admin\KDI\Package
      */
     protected $package;
 

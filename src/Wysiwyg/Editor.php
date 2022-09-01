@@ -35,7 +35,7 @@ final class Editor implements WysiwygEditorInterface
     private $used = false;
 
     /**
-     * @var \KodiCMS\Assets\Package
+     * @var \SleepingOwl\Admin\KDI\Package
      */
     private $package;
 
@@ -80,7 +80,7 @@ final class Editor implements WysiwygEditorInterface
     }
 
     /**
-     * @return \KodiCMS\Assets\Package
+     * @return \SleepingOwl\Admin\KDI\Package
      */
     public function getPackage()
     {

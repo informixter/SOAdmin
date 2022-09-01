@@ -216,9 +216,9 @@ return [
 
     'aliases' => [
         // Components
-        'Assets'              => KodiCMS\Assets\Facades\Assets::class,
-        'PackageManager'      => KodiCMS\Assets\Facades\PackageManager::class,
-        'Meta'                => KodiCMS\Assets\Facades\Meta::class, // will destroy
+        'Assets'              => SleepingOwl\Admin\KDI\Facades\Assets::class,
+        'PackageManager'      => SleepingOwl\Admin\KDI\Facades\PackageManager::class,
+        'Meta'                => SleepingOwl\Admin\KDI\Facades\Assets\Facades\Meta::class, // will destroy
         'Form'                => Collective\Html\FormFacade::class,
         'HTML'                => Collective\Html\HtmlFacade::class,
         'WysiwygManager'      => SleepingOwl\Admin\Facades\WysiwygManager::class,

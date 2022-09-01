@@ -2,7 +2,7 @@
 
 namespace SleepingOwl\Admin\Contracts\Template;
 
-use KodiCMS\Assets\Contracts\AssetsInterface as KodiAssetsInterface;
+use SleepingOwl\Admin\KDI\Contracts\AssetsInterface as KodiAssetsInterface;
 
 interface AssetsInterface extends KodiAssetsInterface
 {

@@ -2,11 +2,11 @@
 
 namespace SleepingOwl\Admin\Templates;
 
-use KodiCMS\Assets\Html;
-use KodiCMS\Assets\AssetElement;
+use SleepingOwl\Admin\KDI\Html;
+use SleepingOwl\Admin\KDI\AssetElement;
 use Illuminate\Support\Collection;
-use KodiCMS\Assets\Assets as BaseAssets;
-use KodiCMS\Assets\Contracts\AssetElementInterface;
+use SleepingOwl\Admin\KDI\Assets as BaseAssets;
+use SleepingOwl\Admin\KDI\Contracts\AssetElementInterface;
 use SleepingOwl\Admin\Contracts\Template\AssetsInterface as AssetsContract;
 
 class Assets extends BaseAssets implements AssetsContract

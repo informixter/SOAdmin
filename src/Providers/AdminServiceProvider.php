@@ -76,7 +76,7 @@ class AdminServiceProvider extends ServiceProvider
     protected function registerTemplate()
     {
         $this->app->singleton('assets.packages', function ($app) {
-            return new \KodiCMS\Assets\PackageManager();
+            return new \SleepingOwl\Admin\KDI\PackageManager();
         });
 
         $this->app->singleton('sleeping_owl.meta', function ($app) {
