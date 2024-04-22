@@ -32,8 +32,8 @@ SleepingOwl Admin is an administrative interface builder for Laravel.
 
  1. Require this package in your composer.json and run composer update:
 
-  	`composer require laravelrus/sleepingowl:5.6.*`
-    
+  	`composer require informixter/soadmin`
+
 
  2. Run this command in the terminal (if you want to know more about what exactly this command does, see [install command documentation](https://en.sleepingowladmin.ru/docs/installation)):
 
@@ -41,7 +41,7 @@ SleepingOwl Admin is an administrative interface builder for Laravel.
     $ php artisan sleepingowl:install
     ```
  3. After you have to update in `composer.json` post-update section:
-    
+
     __Example__:
     ```
 	"post-update-cmd": [
@@ -58,14 +58,14 @@ SleepingOwl Admin is an administrative interface builder for Laravel.
             "@php artisan sleepingowl:update",
     ]
     ```
-    
+
 
 ## Authentication
-   
+
 1. By default, admin module uses Laravel authentication.
 
-   If you want to use auth, you can run artisan command `php artisan make:auth` (https://laravel.com/docs/authentication) 
-and append middleware `auth` to `config/sleeping_owl.php` 
+   If you want to use auth, you can run artisan command `php artisan make:auth` (https://laravel.com/docs/authentication)
+and append middleware `auth` to `config/sleeping_owl.php`
 
    ```php
     ...
@@ -77,16 +77,16 @@ and append middleware `auth` to `config/sleeping_owl.php`
 2. Setting up middleware
 
    By default `auth` middleware use default guard, selected in `config/auth.php`
-  
+
     ```php
     'defaults' => [
       'guard' => 'web', <- default
       ...
     ],
     ```
-  
+
   3. If you are using some package for ACL like (Laratrust, Zizaco Entrust, etc...)
-  
+
       ```php
       'middleware' => ['web', 'role:admin'],
       ```
@@ -97,5 +97,5 @@ and append middleware `auth` to `config/sleeping_owl.php`
 
 ## Copyright and License
 
-Admin was written by Sleeping Owl for the Laravel framework and is released under the MIT License. 
+Admin was written by Sleeping Owl for the Laravel framework and is released under the MIT License.
 See the LICENSE file for details.
